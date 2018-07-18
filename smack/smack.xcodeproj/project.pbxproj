@@ -15,6 +15,7 @@
 		B3163F3E20FCCA2E0018ECE9 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3163F3C20FCCA2E0018ECE9 /* SWRevealViewController.m */; };
 		B3163F4320FD8DA50018ECE9 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3163F4220FD8DA50018ECE9 /* ChatVC.swift */; };
 		B3163F4520FD8DB60018ECE9 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3163F4420FD8DB60018ECE9 /* ChannelVC.swift */; };
+		B3EDC3C020FF1DA90007F30F /* GredientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EDC3BF20FF1DA90007F30F /* GredientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		B3163F3D20FCCA2E0018ECE9 /* Smack-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Smack-Bridging-Header.h"; path = "../../../../书和课程/iOS 11 & Swift 4：From Beginner to Paid Professional™/06 Networking APIs REST and Building a Slack Clone/attached_files/055 App Smack - Project Setup/team-devslopes-app-smack-fe494f15fe51/Smack/Supporting Files/Smack-Bridging-Header.h"; sourceTree = "<group>"; };
 		B3163F4220FD8DA50018ECE9 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		B3163F4420FD8DB60018ECE9 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
+		B3EDC3BF20FF1DA90007F30F /* GredientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GredientView.swift; sourceTree = "<group>"; };
 		DB939F351388D8EF9F3C537C /* Pods-smack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smack.release.xcconfig"; path = "Pods/Target Support Files/Pods-smack/Pods-smack.release.xcconfig"; sourceTree = "<group>"; };
 		EF42AAF4F4C02AD4008120A6 /* Pods-smack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-smack/Pods-smack.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,6 +123,7 @@
 		B3163F4020FD8D5F0018ECE9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B3EDC3BF20FF1DA90007F30F /* GredientView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 				B3163F4320FD8DA50018ECE9 /* ChatVC.swift in Sources */,
 				B3163F2820FC44460018ECE9 /* AppDelegate.swift in Sources */,
 				B3163F3E20FCCA2E0018ECE9 /* SWRevealViewController.m in Sources */,
+				B3EDC3C020FF1DA90007F30F /* GredientView.swift in Sources */,
 				B3163F4520FD8DB60018ECE9 /* ChannelVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

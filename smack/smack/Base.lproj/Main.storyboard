@@ -37,7 +37,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="An8-rr-qc1">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="An8-rr-qc1" customClass="GredientView" customModule="smack" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="77"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cq-Ta-eMd">
@@ -88,16 +88,69 @@
         <scene sceneID="mdK-PR-1la">
             <objects>
                 <viewController id="0Lb-Cz-HN8" customClass="ChannelVC" customModule="smack" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8kA-m4-HpJ">
+                    <view key="view" contentMode="scaleToFill" id="8kA-m4-HpJ" customClass="GredientView" customModule="smack" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smack" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yat-VW-Tdn">
+                                <rect key="frame" x="32" y="67" width="72" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHANNEL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFT-Lm-8FO">
+                                <rect key="frame" x="32" y="130" width="79" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cSe-z6-x2K">
+                                <rect key="frame" x="162" y="570" width="56" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="esd-q8-RYY"/>
+                                    <constraint firstAttribute="height" constant="40" id="j7l-PW-IV3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fmd-IP-mni">
+                                <rect key="frame" x="281" y="129.5" width="22" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" image="addChannelButton"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="X7T-JV-u2q">
+                                <rect key="frame" x="32" y="545" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="huv-AX-uQe"/>
+                                    <constraint firstAttribute="height" constant="90" id="w83-QO-oli"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cSe-z6-x2K" firstAttribute="leading" secondItem="X7T-JV-u2q" secondAttribute="trailing" constant="40" id="4tn-0a-JPW"/>
+                            <constraint firstItem="xFT-Lm-8FO" firstAttribute="top" secondItem="yat-VW-Tdn" secondAttribute="bottom" constant="34" id="8DQ-G9-ykC"/>
+                            <constraint firstItem="BZo-gp-jQS" firstAttribute="trailing" secondItem="Fmd-IP-mni" secondAttribute="trailing" constant="72" id="C5d-yZ-mDV"/>
+                            <constraint firstItem="BZo-gp-jQS" firstAttribute="bottom" secondItem="X7T-JV-u2q" secondAttribute="bottom" constant="32" id="FPD-QZ-emw"/>
+                            <constraint firstItem="yat-VW-Tdn" firstAttribute="top" secondItem="BZo-gp-jQS" secondAttribute="top" constant="47" id="OtN-1e-2LK"/>
+                            <constraint firstItem="xFT-Lm-8FO" firstAttribute="leading" secondItem="BZo-gp-jQS" secondAttribute="leading" constant="32" id="Spw-CY-Fca"/>
+                            <constraint firstItem="X7T-JV-u2q" firstAttribute="leading" secondItem="BZo-gp-jQS" secondAttribute="leading" constant="32" id="Xhe-1d-884"/>
+                            <constraint firstItem="yat-VW-Tdn" firstAttribute="leading" secondItem="BZo-gp-jQS" secondAttribute="leading" constant="32" id="ljE-tW-fGK"/>
+                            <constraint firstItem="Fmd-IP-mni" firstAttribute="centerY" secondItem="xFT-Lm-8FO" secondAttribute="centerY" id="oRM-lN-xHq"/>
+                            <constraint firstItem="cSe-z6-x2K" firstAttribute="centerY" secondItem="X7T-JV-u2q" secondAttribute="centerY" id="rga-8q-XKO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="BZo-gp-jQS"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Rg-Mj-e6p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="914" y="-239"/>
+            <point key="canvasLocation" x="912.79999999999995" y="-239.73013493253376"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="addChannelButton" width="22" height="22"/>
+        <image name="profileDefault" width="192" height="192"/>
+    </resources>
 </document>
