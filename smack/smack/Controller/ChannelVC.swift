@@ -21,6 +21,7 @@ class ChannelVC: UIViewController {
     @IBAction func toLoginPress(_ sender: Any) {
         performSegue(withIdentifier: "toLogin", sender: nil)
     }
+    @IBAction func prepareFor(segue: UIStoryboardSegue){}
     
     
 }

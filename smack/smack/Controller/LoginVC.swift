@@ -20,5 +20,8 @@ class LoginVC: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
-
+    @IBAction func toCA(_ sender: Any) {
+        performSegue(withIdentifier: "toCreateAccount", sender: nil)
+    }
+    
 }
