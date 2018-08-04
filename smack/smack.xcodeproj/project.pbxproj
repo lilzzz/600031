@@ -15,6 +15,8 @@
 		B3163F3E20FCCA2E0018ECE9 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3163F3C20FCCA2E0018ECE9 /* SWRevealViewController.m */; };
 		B3163F4320FD8DA50018ECE9 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3163F4220FD8DA50018ECE9 /* ChatVC.swift */; };
 		B3163F4520FD8DB60018ECE9 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3163F4420FD8DB60018ECE9 /* ChannelVC.swift */; };
+		B357C6CD21152CDA00EAE80E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B357C6CC21152CDA00EAE80E /* Constants.swift */; };
+		B357C6CF211534D500EAE80E /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = B357C6CE211534D500EAE80E /* Auth.swift */; };
 		B3EDC3C020FF1DA90007F30F /* GredientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EDC3BF20FF1DA90007F30F /* GredientView.swift */; };
 		B3EDC3C220FF32260007F30F /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EDC3C120FF32260007F30F /* LoginVC.swift */; };
 		B3EDC3C420FF6DC70007F30F /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EDC3C320FF6DC70007F30F /* CreateAccountVC.swift */; };
@@ -34,6 +36,8 @@
 		B3163F3D20FCCA2E0018ECE9 /* Smack-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Smack-Bridging-Header.h"; path = "../../../../书和课程/iOS 11 & Swift 4：From Beginner to Paid Professional™/06 Networking APIs REST and Building a Slack Clone/attached_files/055 App Smack - Project Setup/team-devslopes-app-smack-fe494f15fe51/Smack/Supporting Files/Smack-Bridging-Header.h"; sourceTree = "<group>"; };
 		B3163F4220FD8DA50018ECE9 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		B3163F4420FD8DB60018ECE9 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
+		B357C6CC21152CDA00EAE80E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B357C6CE211534D500EAE80E /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		B3EDC3BF20FF1DA90007F30F /* GredientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GredientView.swift; sourceTree = "<group>"; };
 		B3EDC3C120FF32260007F30F /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		B3EDC3C320FF6DC70007F30F /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
@@ -92,6 +96,8 @@
 		B3163F2620FC44460018ECE9 /* smack */ = {
 			isa = PBXGroup;
 			children = (
+				B357C6CB21152CBC00EAE80E /* Utilities */,
+				B357C6C82115286B00EAE80E /* Services */,
 				B3163F4120FD8D6E0018ECE9 /* Module */,
 				B3163F4020FD8D5F0018ECE9 /* View */,
 				B3163F3F20FD8D550018ECE9 /* Controller */,
@@ -139,6 +145,22 @@
 			children = (
 			);
 			path = Module;
+			sourceTree = "<group>";
+		};
+		B357C6C82115286B00EAE80E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B357C6CE211534D500EAE80E /* Auth.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B357C6CB21152CBC00EAE80E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B357C6CC21152CDA00EAE80E /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,8 +287,10 @@
 				B3EDC3C220FF32260007F30F /* LoginVC.swift in Sources */,
 				B3163F3E20FCCA2E0018ECE9 /* SWRevealViewController.m in Sources */,
 				B3EDC3C420FF6DC70007F30F /* CreateAccountVC.swift in Sources */,
+				B357C6CF211534D500EAE80E /* Auth.swift in Sources */,
 				B3EDC3C020FF1DA90007F30F /* GredientView.swift in Sources */,
 				B3163F4520FD8DB60018ECE9 /* ChannelVC.swift in Sources */,
+				B357C6CD21152CDA00EAE80E /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
